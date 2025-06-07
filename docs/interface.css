@@ -453,7 +453,10 @@ canvas {
 .engineText5 {
     margin-left: 0;
     margin-top: 0;
-    margin-bottom: 3;
+    margin-bottom: 4px;
+    display: flex;
+    align-items: center;
+    gap: 4px;
 }
 
 .engineText6 {
@@ -822,18 +825,21 @@ body {
     color: #ffffff;
     border-radius: 8px;
     padding: 8px 12px;
+    margin: 4px;
     cursor: pointer;
-    transition: background-color 0.3s ease, transform 0.2s ease;
+    transition: background-color 0.3s ease, transform 0.2s ease, box-shadow 0.2s ease;
 }
 
 .button:hover, .button2:hover {
     background-color: #0066d6;
     transform: translateY(-2px);
+    box-shadow: 0 4px 8px rgba(0,0,0,0.15);
 }
 
 .button:active, .button2:active {
     background-color: #005ac1;
     transform: translateY(0);
+    box-shadow: 0 2px 4px rgba(0,0,0,0.1);
 }
 
 .button:disabled, .button2:disabled {
